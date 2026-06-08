@@ -1,0 +1,19 @@
+# Arquivo interno de alterações, não destinado à entrega
+ALTERACOES_REALIZADAS.txt
+
+# Ambientes virtuais e caches
+.venv/
+.pdfenv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Configurações locais e segredos
+.env
+.streamlit/secrets.toml
+
+# Arquivos temporários
+*.tmp
+*.log
+.ipynb_checkpoints/
