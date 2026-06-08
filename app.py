@@ -46,19 +46,52 @@ st.subheader("Propriedades Químicas")
 col1, col2 = st.columns(2)
 
 with col1:
-    alcohol = st.number_input("Teor Alcoólico", min_value=8.0, max_value=15.0, value=10.0, step=0.1)
-    sulphates = st.number_input("Sulfatos", min_value=0.0, max_value=2.0, value=0.6, step=0.01)
-    volatile_acidity = st.number_input("Acidez Volátil", min_value=0.0, max_value=2.0, value=0.5, step=0.01)
-    citric_acid = st.number_input("Ácido Cítrico", min_value=0.0, max_value=1.0, value=0.25, step=0.01)
-    residual_sugar = st.number_input("Açúcar Residual", min_value=0.0, max_value=16.0, value=2.0, step=0.1)
-    chlorides = st.number_input("Cloretos", min_value=0.0, max_value=0.7, value=0.08, step=0.001)
+    alcohol = st.number_input(
+        "Teor Alcoólico", min_value=8.0, max_value=15.0,
+        value=10.0, step=0.1, format="%.1f",
+    )
+    sulphates = st.number_input(
+        "Sulfatos", min_value=0.0, max_value=2.0,
+        value=0.6, step=0.01, format="%.2f",
+    )
+    volatile_acidity = st.number_input(
+        "Acidez Volátil", min_value=0.0, max_value=2.0,
+        value=0.5, step=0.01, format="%.2f",
+    )
+    citric_acid = st.number_input(
+        "Ácido Cítrico", min_value=0.0, max_value=1.0,
+        value=0.25, step=0.01, format="%.2f",
+    )
+    residual_sugar = st.number_input(
+        "Açúcar Residual", min_value=0.0, max_value=16.0,
+        value=2.0, step=0.1, format="%.1f",
+    )
+    chlorides = st.number_input(
+        "Cloretos", min_value=0.0, max_value=0.7,
+        value=0.08, step=0.001, format="%.3f",
+    )
 
 with col2:
-    free_sulfur_dioxide = st.number_input("Dióxido de Enxofre Livre", min_value=0.0, max_value=100.0, value=15.0, step=1.0)
-    total_sulfur_dioxide = st.number_input("Dióxido de Enxofre Total", min_value=0.0, max_value=300.0, value=45.0, step=1.0)
-    density = st.number_input("Densidade", min_value=0.990, max_value=1.005, value=0.996, step=0.0001)
-    pH = st.number_input("pH", min_value=2.5, max_value=4.5, value=3.3, step=0.01)
-    fixed_acidity = st.number_input("Acidez Fixa", min_value=4.0, max_value=16.0, value=8.0, step=0.1)
+    free_sulfur_dioxide = st.number_input(
+        "Dióxido de Enxofre Livre", min_value=0.0, max_value=100.0,
+        value=15.0, step=1.0, format="%.0f",
+    )
+    total_sulfur_dioxide = st.number_input(
+        "Dióxido de Enxofre Total", min_value=0.0, max_value=300.0,
+        value=45.0, step=1.0, format="%.0f",
+    )
+    density = st.number_input(
+        "Densidade", min_value=0.990, max_value=1.005,
+        value=0.996, step=0.0001, format="%.4f",
+    )
+    pH = st.number_input(
+        "pH", min_value=2.5, max_value=4.5,
+        value=3.3, step=0.01, format="%.2f",
+    )
+    fixed_acidity = st.number_input(
+        "Acidez Fixa", min_value=4.0, max_value=16.0,
+        value=8.0, step=0.1, format="%.1f",
+    )
 
 if st.button("Analisar Qualidade", type="primary"):
     entrada = pd.DataFrame(

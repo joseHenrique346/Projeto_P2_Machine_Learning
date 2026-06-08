@@ -63,7 +63,7 @@ As variáveis de entrada são:
 | `sulphates` | Sulfatos |
 | `alcohol` | Teor alcoólico |
 
-Fonte oficial: [UCI Machine Learning Repository - Wine Quality](https://archive.ics.uci.edu/ml/datasets/wine_quality)
+Fonte oficial: [UCI Machine Learning Repository - Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
 Referência: Cortez, P., Cerdeira, A., Almeida, F., Matos, T. e Reis, J.
 (2009). *Wine Quality*. DOI:
@@ -193,8 +193,8 @@ Projeto_P2_Machine_Learning/
 │   ├── pipeline_vinhos_final.pkl
 │   └── scaler_vinhos.pkl
 ├── notebooks/
-    ├── DESAFIO_09_Qualidade_de_Vinhos.ipynb
-    └── winequality-red.csv
+│   ├── DESAFIO_09_Qualidade_de_Vinhos.ipynb
+│   └── winequality-red.csv
 └── reports/
     └── Relatório_Machine_Learning_P2.pdf
 ```
@@ -219,7 +219,7 @@ As versões utilizadas para gerar os artefatos estão fixadas em
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/CarlosHenriqueLegutcke/Projeto_P2_Machine_Learning.git
+git clone https://github.com/joseHenrique346/Projeto_P2_Machine_Learning.git
 cd Projeto_P2_Machine_Learning
 ```
 
