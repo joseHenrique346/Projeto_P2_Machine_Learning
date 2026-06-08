@@ -177,6 +177,9 @@ A aplicação permite informar as 11 propriedades químicas, executar a previsã
 visualizar a classe estimada e consultar a probabilidade calculada para um vinho
 ser considerado bom.
 
+**Link do app publicado:**  
+https://classificador-vinhos-unimar.streamlit.app/
+
 ## Estrutura dos arquivos
 
 ```text
