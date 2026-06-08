@@ -1,5 +1,7 @@
 # Classificação da Qualidade de Vinhos Tintos
 
+[![Abrir no Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1F9UQGQ5DB8tpNhCcxa2RiVcQ5Qi1AByF?usp=sharing)
+
 Projeto acadêmico de Machine Learning desenvolvido para classificar vinhos
 tintos como **bons** ou **ruins/médios** utilizando suas propriedades
 físico-químicas. O modelo treinado é disponibilizado por meio de uma aplicação
